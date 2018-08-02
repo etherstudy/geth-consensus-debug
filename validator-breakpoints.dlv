@@ -1,0 +1,10 @@
+# This file is to be used in the delve console.
+# You should use the absolute path when you source this file like:
+# (dlv) source /absolute/path/to/validator-breakpoints.dlv
+
+# how a miner starts to create a new block
+break github.com/ethereum/go-ethereum/eth/downloader.(*Downloader).spawnSync() 
+break github.com/ethereum/go-ethereum/core.(*BlockChain).insert() 
+break github.com/ethereum/go-ethereum/eth.(*ProtocolManager).syncer() 
+break github.com/ethereum/go-ethereum/eth.(*ProtocolManager).Start() 
+break github.com/ethereum/go-ethereum/consensus/ethash.(*Ethash).VerifyHeaders()
