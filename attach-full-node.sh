@@ -2,4 +2,4 @@
 
 PROJ_PATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
-geth attach $PROJ_PATH/validator-node/geth.ipc
+geth attach $PROJ_PATH/full-node/geth.ipc
