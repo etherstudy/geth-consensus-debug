@@ -30,25 +30,25 @@
 ```shell
 # Miner node
 ./debug-miner-node.sh
-(dlv) # set break points first
+(dlv) # set break points
 (dlv) # continue
 ```
 
 ```shell
-# Miner console
+# Miner node console
 ./attach-miner-node.sh
 > 
 ```
 
 ```shell
-# Validator node
-./debug-validator-node.sh
-(dlv) # set break points for validator herefirst
+# Full node
+./debug-full-node.sh
+(dlv) # set break points for fullnode here
 (dlv) # continue
 ```
 
 ```shell
-# Validator console
-./attach-validator-node.sh
+# Full node console
+./attach-full-node.sh
 > 
 ```
